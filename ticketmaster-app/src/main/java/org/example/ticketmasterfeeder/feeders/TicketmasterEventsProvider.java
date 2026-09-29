@@ -16,7 +16,7 @@ import java.util.List;
 
 public class TicketmasterEventsProvider {
 
-    private static final String API_KEY = "REDACTED";
+    private static final String API_KEY = System.getenv("TICKETMASTER_API_KEY");
 
     private static final String URL_BASE =
             "https://app.ticketmaster.com/discovery/v2/events.json";

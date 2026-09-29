@@ -115,6 +115,11 @@ Waiting for events from ActiveMQ...
 
 ## Step 3: Initialize Producers (Feeders)
 
+Before running them, configure your API keys (they are not included in the repository):
+
+- **Ticketmaster:** set the environment variable `TICKETMASTER_API_KEY`.
+- **YouTube:** copy `youtube-app/src/main/resources/application.properties.example` to `application.properties` in the same folder and fill in `youtube.api.key`.
+
 Run the following modules:
 
 1. `ticketmaster-app`
